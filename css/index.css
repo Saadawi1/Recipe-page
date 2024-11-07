@@ -1,0 +1,105 @@
+:root {
+    --main-color: #cb6359;
+    --second-color: rgba(216, 70, 138, 0.658);
+}
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: antiquewhite;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-height: 100%;
+    max-width: 520px;
+    padding: 30px;
+    margin: 20px auto;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.container .card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.container .card p {
+    line-height: 1.6;
+    margin-bottom: 30px;
+    font-size: 10px;
+}
+
+.card {
+    font-weight: normal;
+    font-size: 13px;
+}
+
+.container .card .preparation-time {
+    background-color: rgba(241, 229, 229, 0.361);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.container .card .preparation-time h4 {
+    color: var(--second-color)
+}
+
+h2 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 32px;
+}
+
+h3 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: var(--main-color);
+    font-size: 20px;
+}
+
+table {
+    width: 375px;
+    border-collapse: collapse;
+}
+
+tr:not(:nth-last-child(1)) {
+    border-bottom: 1px solid var(--main-color);
+}
+
+td {
+    padding: 10px 30px;
+}
+
+table td:not(:first-child) {
+    color: var(--main-color);
+}
+
+.preparation-time ul li::marker {
+    color: var(--second-color);
+}
+
+ul li {
+    margin-bottom: 25px;
+}
+
+ol li {
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+
+ol li::marker,
+ul li::marker {
+    color: var(--main-color);
+
+}
+@media (max-width:767px){
+    body{
+        margin-top: 0;
+        padding-left: 0;
+    }
+}
